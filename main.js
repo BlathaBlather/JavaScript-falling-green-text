@@ -43,6 +43,11 @@ class HackerScreen {
         }
     }
 
+    /**
+     * Creates a new group on the point specified
+     * @param {Integer} x 
+     * @param {Integer} y 
+     */
     addIndividualToGroup(x, y) {
         var new_group_height = this.group_height + Math.floor(Math.random() * 7) - 3; // Define group height
         var new_characters = this.generateCharacters(new_group_height);
@@ -57,6 +62,11 @@ class HackerScreen {
 
     }
 
+    /**
+     * Create a new set of characters to use for the group
+     * @param {Integer} new_group_height 
+     * @returns List of new characters
+     */
     generateCharacters(new_group_height) {
         var new_characters = [];
 
@@ -105,12 +115,6 @@ class HackerScreen {
                 this.groups.splice(i, 1);
             }
         }
-
-    }
-}
-
-class Screen {
-    constructor() {
 
     }
 }
