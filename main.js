@@ -7,10 +7,10 @@ class HackerScreen {
         this.y_space = y_cells;
 
         // Define height of each group and maximum variation
-        this.group_height = 10;
-        this.group_height_variation = 3;
+        this.group_height = 20;
+        this.group_height_variation = 10;
 
-        // Define probabilty of adding a new3 group each update
+        // Define probabilty of adding a new group each update
         this.probability_add_to_group = 0.25;
 
         // Define maximum number of groups on display at any time
